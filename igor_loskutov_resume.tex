@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Igor Loskutov
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.loskutoff.com/}{\Large Igor Loskutov}} & Email : \href{mailto:igor@loskutoff.com}{igor@loskutoff.com}\\
+  \href{https://www.loskutoff.com/}{https://www.loskutoff.com} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Moscow Technological University \& Toljatti Technical University}{Moscow \& Toljatti, Russia}
+      {Bachelor of Engineering in Computer Science}{2012 - 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fiddlequest LLC}{Rogue River, OR, US}
+      {Senior Software Engineer}{Dec 2014 - Present}
+      \resumeItemListStart
+        \resumeItem{Node.js/Meteor.js App (Typescript)}
+          {API for browser "SPA" app, including realtime data publications; API for mobile apps, featuring a video encoding and upload workflow; API for HTML5 game app, featuring realtime data synchronisation with the browser app by using AWS stack and websockets.}
+        \resumeItem{Billing integration}
+          {Stripe with coupons, discounts. Complete two-way synchronisation of the App with Stripe Control Panel.}
+        \resumeItem{React.js (Typescript)}
+          {React.JS/Typescript app. Featuring: realtime updates, custom business logic for 4 account types, accent on code reuse.}
+        \resumeItem{React Native iOS/Android apps})
+          {Cross-platform work with camera, screen rotation, video pre-encoding, realtime backend API updates, secure upload into S3.}
+        \resumeItem{HTML5 Game}
+          {Core logic scripting, inventory / badges (achievements) / "points" for uploaded through the mobile app videos. Typescript, React.js, AWS (SQS, DynamoDB, Lambda, SNS), Docker.}
+        \resumeItem{DevOps}
+          {AWS infrastructure (S3, Video encoding, Lambdas, SQS, DynamoDB, SNS, Route53); Semi-automated deployment of: "main" and "frontend" apps to DigitalOcean with Ansible, React Native app to stores (and, most often, avoiding cumbersome store review), HTML5 game backend/frontend to DigitalOcean Apps with Docker.}
+        \resumeItem{Management}
+          {Set up Git/Ansible/Stripe/Pivotaltracker notifications to Slack, Pivotaltracker/later Asana for collaboration with other developers. Git code reviews.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TheHireStreet}{London, UK}
+      {Software Engineer}{Dec 2016 - Apr 2021}
+      \resumeItemListStart
+        \resumeItem{Java backend app}
+          {Item rentals in UK. Full item hiring workflow, from Quote to Return. Well tested, functional style code.}
+        \resumeItem{Frontent app}
+          {Initially, jQuery app, that I took responsibility of and moved it gracefully to Typescript/React.js/MobX with no development downtime.}
+        \resumeItem{DevOps}
+          {Jenkins, EC2, S3, SES}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TokenStore}{US}
+      {Software Engineer}{Dec 2016 - Apr 2021}
+      \resumeItemListStart
+        \resumeItem{Decentralised Crypto Exchange (ERC20)}
+          {An API over a Solidity contract (web3); cache layer for performance. Node.js.}
+        \resumeItem{Frontend app}
+          {Market Charts, Browser <-> Ethereum contract integration (MetaMask). React, Redux.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Danke Games}{Heidelberg, Germany}
+      {Software Engineer}{Sep 2013 - Nov 2014}
+      \resumeItemListStart
+        \resumeItem{Yarnee, Instagram clone but with Stories — backend}
+          {Python Backend. Mostly just CRUD.}
+        \resumeItem{Frontend}
+          {Angular, heavy focus on styles (scss) and animations.}
+        \resumeItem{DevOps}
+          {AWS Beanstalk load balancing for API.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Megaplan}{Moscow, Russia}
+      {Software Engineer}{May 2012 - Feb 2013}
+      \resumeItemListStart
+        \resumeItem{Helpdesk based on Atlassian Jira (Java)}
+          {Custom Jira plugin development. Automatic email handling. Time/salary reports, charts. Heavily customised workflow for developers. Set of custom plugins to automate it.}
+        \resumeItem{Custom Postgres Failover solution (Scala, Apache Zookeeper)}
+          {Before Postgres had it as a feature.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Neoflex}{Moscow, Russia}
+      {Software Engineer}{Jun 2011 - May 2012}
+      \resumeItemListStart
+        \resumeItem{Back office automated reporting system}
+          {Work with managers on requirements. ETL process, Data warehouse. A lot of work with SQL, PLSQL. Atlassian Jira plugins for reporting (Java).}
+      \resumeItemListEnd
+
+%    \resumeSubheading
+%      {Intelligence and Innovations}{Moscow, Russia}
+%      {Software Engineer}{Dec 2010 - Jun 2011}
+%      \resumeItemListStart
+%        \resumeItem{Company website development and maintenance}
+%          {PHP, Drupal, even ActionScript/Flash (a mall map that works with REST API.)}
+%      \resumeItemListEnd
+
+
+
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
