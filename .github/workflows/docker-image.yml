@@ -19,4 +19,8 @@ jobs:
                 image: thomasweise/docker-texlive-full:latest
                 options: -v ${{ github.workspace }}:/data
                 run: |
-                    latex pdflatex resume.tex
+                    cd data
+                    pdflatex igor_loskutov_resume.tex
+          - uses: stefanzweifel/git-auto-commit-action@v4
+            with:
+              commit_message: Apply pdflatex changes
