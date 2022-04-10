@@ -8,7 +8,7 @@ on:
 
 jobs:
     compile:
-        name: Compile site assets
+        name: Compile resume pdf
         runs-on: ubuntu-latest
         steps:
           - name: Check out the repo
