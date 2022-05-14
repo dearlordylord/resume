@@ -6,7 +6,7 @@ A fork of https://github.com/sb2nov
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex resume.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex igor_loskutov_resume.tex
 ```
 
 ### Preview
