@@ -13,10 +13,15 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+    linkcolor = blue,
+    urlcolor  = blue,
+    citecolor = blue,
+    anchorcolor = blue]{hyperref}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -93,8 +98,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://www.loskutoff.com/}{\Large Igor Loskutov | Full Stack Developer}} & Email : \href{mailto:igor@loskutoff.com}{igor@loskutoff.com}\\
-  \href{http://www.loskutoff.com/}{http://www.loskutoff.com} \\
+  \textbf{\href{https://github.com/dearlordylord}{\Large Igor Loskutov | Full Stack Developer}} & Email : \href{mailto:igor@loskutoff.com}{igor@loskutoff.com}\\
+  %---- TODO http://www.loskutoff.com/
+  \href{https://github.com/dearlordylord}{Github} \\
 \end{tabular*}
 
 %-----------EXPERIENCE-----------------
@@ -123,7 +129,7 @@
 
     \resumeSubheading
       {FiddleQuest LLC}{Rogue River, OR, US, Remote}
-      {Lead Developer}{Dec 2014 - Present (retainer)}
+      {Lead Developer}{2014 - 2023}
       \resumeItemListStart
         \resumeItem{Violin teaching/learning app. React/Node.js/Meteor.js App (Typescript)}
           {The product I’ve made from scratch and evolved over the years, took the business to a new level. It’s currently an integral part of their education process. Featuring realtime DB → UI updates done in performant and maintainable way. Billing with Stripe, subscription/discounts/coupon system, properly synchronized two-way with Webhooks}
@@ -133,40 +139,47 @@
           {Core logic scripting, inventory / badges (achievements) / "points" for uploaded through the mobile app videos. Typescript, React.js, AWS (SQS, DynamoDB, Lambda, SNS), Docker}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {TheHireStreet}{London, UK, Remote}
-      {Software Engineer}{Dec 2016 - Apr 2021}
-      \resumeItemListStart
-        \resumeItem{Java/Lombok (Dropwizard), Typescript (React)}
-          {Rental system for catering businesses and individuals. Modernized the current Java/jQuery product (to React)}
-      \resumeItemListEnd
+%    \resumeSubheading
+%      {TheHireStreet}{London, UK, Remote}
+%      {Software Engineer}{Dec 2016 - Apr 2021}
+%      \resumeItemListStart
+%        \resumeItem{Java/Lombok (Dropwizard), Typescript (React)}
+%          {Rental system for catering businesses and individuals. Modernized the current Java/jQuery product (to React)}
+%      \resumeItemListEnd
+
+%    \resumeSubheading
+%      {An Ethereum based Crypto DEX. Mostly NDA}{Remote}
+%      {Software Engineer}{Dec 2016 - Apr 2021}
+%      \resumeItemListStart
+%        \resumeItem{Frontend, React (JS), Redux}
+%          {Integrated Metamask and hardware wallets with their Ethereum contract. Charts}
+%      \resumeItemListEnd
+
+%    \resumeSubheading
+%      {Danke Games}{Heidelberg, Germany, Remote}
+%      {Software Engineer}{Sep 2013 - Nov 2014}
+%      \resumeItemListStart
+%        \resumeItem{Yarnee, Instagram stories before they were a thing. Angular, DevOps/AWS}
+%          {Frontend (AngularJS), Backend (Python/Pyramid). I also have made the app horisontally scalable with the AWS stack}
+%      \resumeItemListEnd
+
+%    \resumeSubheading
+%      {Megaplan}{Moscow, Russia}
+%      {Software Engineer}{May 2012 - Feb 2013}
+%      \resumeItemListStart
+%        \resumeItem{Helpdesk development, Java/Scala}
+%          {I wrote them a helpdesk system integrated with development task management using Atlassian JIRA plugin system}
+%        \resumeItem{Custom Postgres Failover solution (Scala, Apache Zookeeper)}
+%          {Before Postgres had it as a feature}
+%      \resumeItemListEnd
 
     \resumeSubheading
-      {An Ethereum based Crypto DEX. Mostly NDA}{Remote}
-      {Software Engineer}{Dec 2016 - Apr 2021}
+      {Previous jobs}{Moscow, Russia}
+      {Software Engineer}{2011 - 2014}
       \resumeItemListStart
-        \resumeItem{Frontend, React (JS), Redux}
-          {Integrated Metamask and hardware wallets with their Ethereum contract. Charts}
+        \resumeItem{Java/Scala, AWS, Angular, React, JS/Typescript}
+          {More details on request.}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Danke Games}{Heidelberg, Germany, Remote}
-      {Software Engineer}{Sep 2013 - Nov 2014}
-      \resumeItemListStart
-        \resumeItem{Yarnee, Instagram stories before they were a thing. Angular, DevOps}
-          {Frontend (AngularJS), Backend (Python/Pyramid). I also have made the app horisontally scalable with the AWS stack}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Megaplan}{Moscow, Russia}
-      {Software Engineer}{May 2012 - Feb 2013}
-      \resumeItemListStart
-        \resumeItem{Helpdesk development, Java/Scala}
-          {I wrote them a helpdesk system integrated with development task management using Atlassian JIRA plugin system}
-        \resumeItem{Custom Postgres Failover solution (Scala, Apache Zookeeper)}
-          {Before Postgres had it as a feature}
-      \resumeItemListEnd
-
 
 
 
@@ -225,7 +238,7 @@
       \hfill
     }
     \item{
-      \textbf{Misc}{: TDD, DDD, System Analysis, Functional Programming, Haskell, Clojure}
+      \textbf{Misc}{: TDD, DDD, System Analysis, Functional Programming, Haskell, Clojure, Solana, Bevy}
     }
   \resumeSubHeadingListEnd
 
@@ -236,6 +249,16 @@
       {Moscow Technological University \& Toljatti Technical University}{Moscow \& Toljatti, Russia}
       {Bachelor of Engineering in Computer Science}{2012 - 2016}
   \resumeSubHeadingListEnd
+
+\section{Publications}
+  \resumeSubHeadingListStart
+     \item
+       \href{https://www.reddit.com/r/rust/comments/12zjysp/50_shades_of_rust_or_emerging_rust_guis_in_a_wasm/}{50 shades of Rust or emerging Rust GUIs in a WASM}
+     \item
+       \href{https://monadical.com/posts/property-based-testing-for-temporal-graph-storage.html}{Property-based testing for temporal graph storage}
+     \item
+       \href{https://youtu.be/Yr9PaIdeoew}{Entity Component System pattern в Game Dev on Rust; Data-Oriented Design intricacies. (Tech talk) (RUS)}
+   \resumeSubHeadingListEnd
 
 %-----------Certs-----------------
   \section{Certs}
@@ -248,8 +271,13 @@
         {Zend Certified Engineer PHP}
       \item
         \href{https://cert.tough-dev.school/eS8vL3fj6ZMuKuBvqcpKQS/en}{System Analysis by tought-dev.school}
+      \item
+        \href{https://cert.tough-dev.school/UZcEoycLeUiAcBBUzmb9xs/en}{Asynchronous Architecture by tought-dev.school}
     \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
+%------------------------------------------- TODO https://urltown.apps.loskutoff.com/
+%------------------------------------------- TODO graph app
+%------------------------------------------- TODO 2-game
 \end{document}
